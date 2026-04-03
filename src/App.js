@@ -1,25 +1,25 @@
 import React from "react";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <button className="btn btn-primary">Test</button>
+      <div className="container text-center mt-5">
+        <h1 className="mb-4">Weather App</h1>
 
-      <footer>
-        This project was coded by Leisha Henry and is{" "}
-        <a
-          href="https://github.com/LeishaH/react-weather"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          open-sourced on GitHub
-        </a>
-        .
-      </footer>
+        <footer>
+          <p>This project was coded by Leisha Henry and is</p>
+
+          <a
+            href="https://github.com/LeishaH/react-weather"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Open-sourced on GitHub
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
